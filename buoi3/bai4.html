@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>thời trang and đồng hồ nam</title>
+</head>
+<style>
+   
+    .menu{
+        text-align: center;
+    }
+    .menu li{
+    	font-weight: bold;
+        background-color:red;
+        border: solid 2px lawngreen;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        display: inline-block;
+        margin-left: -6px;
+        margin-top: -2px;
+        line-height: 40px;
+        position: relative;
+    }
+
+    .menu li:hover{
+        background-color:blue;
+    }
+
+    .menu1{
+        display: none;
+        position: absolute;
+    }
+
+    .menu1 li{
+        margin-left: -42px;
+        top: 12px;
+    }
+
+    .menu li:hover .menu1{
+        display: block;
+    }
+
+    .menu2{
+        display: none;
+        position: absolute;
+    }
+
+    .menu2 li{
+        margin-left: -1px;
+        top: 0px;
+    }
+
+    .menu1 li:hover .menu2{
+        display: inline-block;
+    }
+    .menu2 li:link{
+          color: chartreuse;
+    }
+    a{
+        text-decoration: none;
+    }
+
+
+</style>
+<body>
+ <div class="menu">
+    <ul>
+        <li>Trang Chủ</li>
+        <li>Quần Áo Nam
+            <ul class="menu1">
+                <li>Áo Cộc Tay</li>
+                <li>Quần Jean</li>
+                <li>Đồng Hồ Đeo Tay
+                   	<ul class="menu2">
+                            <li><a href="https://xwatch.vn/?gclid=CjwKCAjwjLD4BRAiEiwAg5NBFqZP0VwvhzUEuQNJ6VFxHgIMT66oiiuI4U30XmBO6V62Xr65uLPqJhoCFQoQAvD_BwE">Đồng Hồ Casio</a> </li>
+                            <li>Đồng Hồ Rolex</li>
+                            <li>Đồng Hồ Hàng Mã</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+            <li>Quần Áo Nữ</li>
+            <li>Quần Áo Trẻ Em</li>
+    </ul>
+    </div>
+</body>
+</html>

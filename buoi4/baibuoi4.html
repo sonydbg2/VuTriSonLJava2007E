@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cobebandiem</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+    }
+
+    .header {
+        width: auto;
+        text-align: center;
+    }
+
+    .img_logo {
+        text-align: center;
+    }
+
+    #logo {
+        height: 90px;
+        vertical-align: middle;
+        margin: 0.5cm;
+    }
+
+    #img {
+        max-width: 100%;
+        height: 95px;
+        margin-top: 0em;
+        vertical-align: middle;
+        padding: 0 1cm;
+    }
+
+    .sub-menu {
+        background-color: rgba(30, 100, 156, 0.884);
+    }
+
+    .sub-menu>li {
+        display: inline-block;
+        padding: 15px 15px;
+        font-size: 14px;
+        font-family: 'Fira Sans Extra';
+        color: white;
+        margin: 0 0.3cm;
+        margin-right: -20px;
+        transition: all .5s;
+    }
+
+    .sub-menu>li:hover {
+        background-color: rgb(235, 38, 38);
+        cursor: pointer;
+    }
+
+    .tang1 {
+        display: inline-block;
+        background-color: rgb(218, 80, 80);
+        list-style: none;
+        width: 230px;
+        height: 150px;
+        line-height: 50px;
+        display: none;
+        top: 4.6cm;
+        right: 12.46cm;
+    }
+
+    .tang1>li:hover {
+        background-color: rgb(235, 38, 38);
+    }
+
+    .sub-menu>li:hover .tang1 {
+        position: absolute;
+        display: block;
+    }
+
+    #imgcenter {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: auto;
+        display: inline-block;
+    }
+
+    .contentleft {
+        float: left;
+        width: 880px;
+        height: 400px;
+        margin-left: 5cm;
+        text-transform: uppercase;
+    }
+
+
+    .contentleft h3 {
+        font-size: 22px;
+        color: #286090;
+        text-decoration: none;
+    }
+
+    .contentleft h4 {
+        font-size: 15px;
+        line-height: 23px;
+        color: #337ab7;
+        text-decoration: none;
+    }
+
+    .contentleft span {
+        margin-right: 10px;
+        font-size: 13px;
+        color: #888;
+    }
+
+    .contentleft p {
+        font-size: 13px;
+        color: #333;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+    .contentleft1 h4 {
+        width: 260px;
+        font-size: 13px;
+        line-height: 23px;
+        text-decoration: none;
+        color: #337ab7;
+    }
+
+    .contentleft1 img {
+        width: 250px;
+        height: 150px;
+    }
+
+    #contentleft1_1,
+    #contentleft1_2,
+    #contentleft1_3 {
+        float: left;
+        margin: 0.2cm;
+    }
+
+    .contentleft2 {
+        float: left;
+        height: 150px;
+        width: 800px;
+        max-width: 100%;
+    }
+
+    .contentleft2_1 img {
+        width: 265px;
+        height: 150px;
+        float: left;
+    }
+
+    .contentleft2_1 {
+        width: 816px;
+    }
+
+    .contentleft2_1_1 {
+        width: 815px;
+        height: 200px;
+        display: inline-block;
+    }
+
+    .contentleft2_1_2 {
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .contentleft2_1_3 {
+        
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .contentleft2_1_4 {
+        
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .contentleft2_1_5 {
+        
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .contentleft2_1_6 {
+        
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .contentleft2_1_7 {
+        
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .contentleft2_1_8 {
+        
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .contentleft2_1_9 {
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .contentleft2_1_10 {
+        display: inline-block;
+        width: 815px;
+        height: 200px;
+    }
+
+    .quatrang {
+        width: 800px;
+        position: relative;
+        text-align: center;
+    }
+
+    .quatrang span {
+        display: inline-block;
+        padding: 5px 0px;
+        margin-bottom: 30px;
+        color: blue;
+    }
+
+    #noidung1 {
+        margin-left: 8cm;
+    }
+
+    .contentright {
+        width: 200px;
+        height: 100%;
+        margin-right: 5cm;
+        float: left;
+    }
+
+    .contentright_1 {
+        float: left;
+        width: 250px;
+        border: solid 1px black;
+    }
+
+    .contentright_1 p {
+        color: #4e4e4e;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 0.5cm;
+    }
+
+    .contentright_1 h4 {
+        display: block;
+        background: #286090;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        width: 200;
+        padding: 10px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .contentright_2 {
+        margin-top: 1cm;
+        width: 250px;
+        float: left;
+    }
+
+    .contentright_2 h3 {
+        background: #286090;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        border: solid 1px black;
+    }
+
+    .contentright_2_1_1 p {
+        vertical-align: top;
+        font-size: 14px;
+        color: #333;
+        display: inline-block;
+        width: 130px;
+        height: 100px;
+    }
+
+    .contentright_2_1 {
+        float: left;
+    }
+    .contentright_2_1 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contentright_2 {
+        margin-top: 1cm;
+        width: 250px;
+        float: left;
+    }
+
+    .contentright_3 {
+        margin-top: 1cm;
+        width: 250px;
+        float: left;
+    }
+
+    .contentright_3 h3 {
+        background: #286090;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .contentright_3_1 span {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        font-size: 15px;
+        background: #286090;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .contentright_3_1_1 {
+        margin-top: 1cm;
+        line-height: 20px;
+    }
+
+    .quangcao {
+        margin-top: 1cm;
+        width: 250px;
+        float: left;
+    }
+
+    .quangcao h3 {
+        background: #286090;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .banbe {
+        margin-top: 1cm;
+        width: 250px;
+        float: left;
+        border: solid 1px black;
+    }
+
+    .banbe h3 {
+        background: #286090;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .banbe p {
+        color: #4e4e4e;
+        font-weight: 500;
+        margin: 0.5cm;
+    }
+
+    .facebook {
+        margin-top: 1cm;
+        width: 250px;
+        float: left;
+    }
+
+    .facebook h3 {
+        background: #286090;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .footer {
+        background-color: rgb(31, 100, 190);
+        width: 100̀̀̀%;
+        height: 350px;
+        float: left;
+        margin-top: 2cm;
+        color: #fff;
+    }
+
+    .vetoi span {
+        display: block;
+        border: solid 1px white;
+        width: 65px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 0.6cm;
+    }
+
+    .vetoi {
+        width: 25%;
+        margin-top: 2cm;
+        padding-left: 3cm;
+        float: left;
+    }
+
+    .vetoi p {
+        margin-top: 0.3cm;
+    }
+
+    .chuyenmuc {
+        width: 20%;
+        margin-top: 2cm;
+        padding-left: 3cm;
+        float: left;
+    }
+
+    .chuyenmuc p {
+        margin: 0.3cm;
+    }
+
+    .lienhe {
+        width: 25%;
+        margin-top: 2cm;
+        padding-left: 3cm;
+        float: left;
+    }
+
+    .lienhe p {
+        margin-top: 0.3cm;
+    }
+
+    .banquen {
+        width: 100%;
+        height: 40px;
+        float: left;
+        bottom: 0cm;
+        background-color: rgb(106, 165, 241);
+        text-align: center;
+        line-height: 40px;
+        margin-top: 1cm;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="img_logo">
+                <img id="logo" src="http://html.thietkeweb43.com/mywebsite/images/logo.png">
+                <img id="img" src="https://via.placeholder.com/900x100">
+            </div>
+            <div class="menu">
+                <ul class="sub-menu">
+                    <li style="background-color: rgb(235, 38, 38);">TRANG CHỦ</li>
+                    <li>GIỚI THIỆU</li>
+                    <li>HỌC HTML</li>
+                    <li>HỌC CSS</li>
+                    <li>HỌC JQUERY
+                        <ul class="tang1">
+                            <li>HOC VUEJS</li>
+                            <li>HỌC ANGULARJS</li>
+                            <li>HỌC REACTJS</li>
+                        </ul>
+                    </li>
+                    <li>HỌC WORDPRESS</li>
+                    <li>HỌC REACTJS</li>
+                    <li>LIÊN HỆ</li>
+                </ul>
+            </div>
+        </div>
+        <img id="imgcenter" src="https://via.placeholder.com/1920x500">
+        <div class="content">
+            <div class="contentleft">
+                <h2>BÀI VIẾT NỔI BẬT</h2>
+                <img src="https://via.placeholder.com/800x400">
+                <h3>Hướng dẫn chuyển html sang wordpress khởi tạo dự án</h3>
+                <span>Ngày đăng: 30-09-2017</span>
+                <span>Lượt xem: 2344 Lượt</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum libero unde. Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Ipsum libero unde laudantium sapiente atque odio at facere nemo
+                    aperiam.</p>
+                <div class="contentleft1">
+                    <div id="contentleft1_1"><img src="https://via.placeholder.com/265x150">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                        <span>Ngày đăng: 30-09-2017</span>
+                    </div>
+                    <div id="contentleft1_2"><img src="https://via.placeholder.com/265x150">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                        <span>Ngày đăng: 30-09-2017</span>
+                    </div>
+                    <div id="contentleft1_3"><img src="https://via.placeholder.com/265x150">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                        <span>Ngày đăng: 30-09-2017</span>
+                    </div>
+                </div>
+                <div class="contentleft2">
+                    <h3 style="text-transform: uppercase;
+                    font-size: 25px;
+                    color: #333;
+                    font-weight: 600;">Bài viết mới nhất</h3>
+                    <div class="contentleft2_1">
+                        <div class="contentleft2_1_1">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_2">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_3">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_4">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_5">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_6">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_7">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                   et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                    Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_8">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_9">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="contentleft2_1_10">
+                            <img src="https://via.placeholder.com/265x150">
+                            <div id="noidung1">
+                                <h4>Bài viết mới nhất của chủ đề hướng dẫn wordpress</h4>
+                                <span>Ngày đăng: 12-23-2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus
+                                    et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit!
+                                     Consectetur ullam praesentium deserunt ratione hic.</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="quatrang">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>Tiếp theo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contentright">
+                <div class="contentright_1">
+                    <h4>CHUYÊN MỤC</h4>
+                    <p>> Học wordpress (152)</p>
+                    <p>> Học HTML (52)</p>
+                    <p>> Học CSS (15)</p>
+                    <p>> Học Jquery (7)</p>
+                    <p>> Học React Native (8)</p>
+                    <p>> Chủ đề khác (10)</p>
+                </div>
+                <div class="contentright_2">
+                    <h3>BÀI VIẾT MỚ</h3>
+                    <div class="contentright_2_1">
+                        <div class="contentright_2_1_1"><img src="https://via.placeholder.com/100">
+                            <p>7 kênh youtube học lập trình web tốt nhất thế giới giúp bạn nâng cao kỹ năng</p>
+                            <span>Ngày đăng: 22-02-2016</span>
+                        </div>                          
+                        <hr>
+                        <div class="contentright_2_1_1">
+                            <img src="https://via.placeholder.com/100">
+                            <p>7 kênh youtube học lập trình web tốt nhất thế giới giúp bạn nâng cao kỹ năng</p>
+                            
+                                <span>Ngày đăng: 22-02-2016</span>
+                                       
+                            <hr>
+                        </div>
+                        <div class="contentright_2_1_1"><img src="https://via.placeholder.com/100">
+                            <p>7 kênh youtube học lập trình web tốt nhất thế giới giúp bạn nâng cao kỹ năng</p>
+                            <span>Ngày đăng: 22-02-2016</span>
+                            <hr>
+                        </div>
+                        <hr>
+                        <div class="contentright_2_1_1"><img src="https://via.placeholder.com/100">
+                            <p>7 kênh youtube học lập trình web tốt nhất thế giới giúp bạn nâng cao kỹ năng</p>
+                            <span>Ngày đăng: 22-02-2016</span>
+                            <hr>
+                        </div>
+                        <hr>
+                        <div class="contentright_2_1_1"><img src="https://via.placeholder.com/100">
+                            <p>7 kênh youtube học lập trình web tốt nhất thế giới giúp bạn nâng cao kỹ năng</p>
+                            <span>Ngày đăng: 22-02-2016</span>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentright_3">
+                    <h3>BÀI VIẾT XEM NHIỀU</h3>
+                    <div class="contentright_3_1">
+                        <div class="contentright_3_1_1"><span>1</span>
+                            <p>Download file psd background chương trình, hội nghị</p>
+                        </div>
+                        <hr>
+                        <div class="contentright_3_1_1"><span>2</span>
+                            <p>Download miễn phí phần mềm Adobe indesign CS4 & CS5</p>
+                        </div>
+                        <hr>
+                        <div class="contentright_3_1_1"><span>3</span>
+                            <p>Du hí Quảng Nam – Làng bích họa – Tượng đài Mẹ Thứ</p>
+                        </div>
+                        <hr>
+                        <div class="contentright_3_1_1"><span>4</span>
+                            <p>Du hí Quảng Nam – Thánh địa Mỹ Sơn</p>
+                        </div>
+                        <hr>
+                        <div class="contentright_3_1_1"><span>5</span>
+                            <p>Share full code website tin tức sử dụng wordpress</p>
+                        </div>
+                        <hr>
+                        <div class="contentright_3_1_1"><span>6</span>
+                            <p>Share full code web shop, web bán hàng sử dụng wordpress</p>
+                        </div>
+                        <hr>
+                        <div class="contentright_3_1_1"><span>7</span>
+                            <p>Những câu hỏi thường gặp khi đi phỏng vấn lập trình php</p>
+                        </div>
+                        <hr>
+                        <div class="contentright_3_1_1"><span>8</span>
+                            <p>10 đoạn code đếm ngược sử dụng script cực đẹp, miễn phí</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="quangcao">
+                    <h3>QUẢNG CÁO</h3>
+                    <img style="width: 250px;" src="https://via.placeholder.com/300x600">
+                </div>
+                <div class="banbe">
+                    <h3>BẠN BÈ</h3>
+                    <p>>HuyKira</p>
+                    <p>>BlogHuykira</p>
+                </div>
+                <div class="facebook">
+                    <h3>FACEBOOK</h3>
+                    <img style="width: 250px;" src="https://via.placeholder.com/300">
+                </div>
+            </div>
+        </div>
+        <div style=" font-size: 14px;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;" class="footer">
+            <div class="vetoi">
+                <h3 style="font-family: inherit;
+                font-weight: 500;
+                line-height: 1.1;
+                ">VỀ TÔI</h3>
+                <hr>
+                <p>Tốt nghiệp ĐH Sư Phạm nhưng tôi lại thích lập trình và thiết kê web, vì vậy tôi tạo ra trang web này
+                    để trao đổi kiến thức về lập trình và thiết kế web</p>
+                <span>Xem thêm</span>
+            </div>
+            <div class="chuyenmuc">
+                <h3>CHUYÊN MỤC</h3>
+                <hr>
+                <p>>>Lập trình</p>
+                <p>>>Thiết kế web</p>
+                <p>>>Học Wordpress</p>
+                <p>>>Học HTMl & CSS</p>
+                <p>>>Video Hướng dẫn</p>
+                <p>>>Kiến thức khác</p>
+            </div>
+            <div class="lienhe">
+                <h3>LIÊN HỆ</h3>
+                <hr>
+                <p>Địa chỉ: 888 Tôn Đức Thắng - Hòa Khánh - Liên Chiểu</p>
+                <p>Điện thoại: 01658949680</p>
+                <p>Email: huykira@gmail.com</p>
+                <p>Website: https://huykira.net</p>
+            </div>
+            <div class="banquen">
+                <p>Bản quyền thuộc về Huy Kira</p>
+            </div>
+        </div>
+    </div>
+</body>

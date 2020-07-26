@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+</head>
+
+<body>
+    <script>
+        var DiemKT = +(window.prompt("Nhap diem kiem tra: "));
+        var DiemGK = +(window.prompt("Nhap diem giua ky: "));
+        var DiemCK = +(window.prompt("Nhap diem cuoi ky: "))
+        var dtb = (+(DiemKT) + +(DiemKT) + +(DiemGK)) / 3;
+
+        if (DiemKT < 0 || DiemKT > 10 || DiemGK < 0 || DiemGK > 10 || DiemCK < 0 || DiemCK > 10) {
+            document.write("Dữ liệu nhập sai, vui lòng nhập lại.");
+        }
+
+        else {
+            var dtb = ((DiemKT + DiemGK + DiemCK) / 3).toFixed(2);
+            if (dtb >= 9) {
+                document.write("Điểm Trung bình của bạn là:  " + dtb + "  Xếp hạng A");
+            }
+            else if (dtb >= 7 && dtb < 9) {
+                document.write("Điểm Trung bình của bạn là:  " + dtb + "  Xếp hạng B");
+            }
+            else if (dtb >= 5 && dtb < 7) {
+                document.write("Điểm Trung bình của bạn là:  " + dtb + "  Xếp hạng C");
+            }
+            else if (dtb < 5) {
+                document.write("Điểm Trung bình của bạn là:  " + dtb + "  Xếp hạng F");
+            }
+            else {
+                document.write("Dữ liệu nhập sai, vui lòng nhập và thử lại.");
+            }
+        }
+    </script>
+</body>
+
+</html>

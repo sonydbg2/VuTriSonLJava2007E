@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+</head>
+<body>
+    <script>
+        var Time = +(window.prompt("Nhập số thời gian cuộc gọi (phút)."))
+        if(Time>0 && Time <50){
+            document.write("Cước thoại của quý khách là :   " + (1000 + Time*600) + "VND");
+        }
+        else if(Time >50 && Time<150){
+            document.write("Cước thoại của quý khách là :   " + (1000 + 50*600 + (Time-50)*400 ) + "VND");
+        }
+        else if(Time >200){
+            document.write("Cước thoại của quý khách là :   " + (1000 + 50*600 + 150*400+(Time-150)*200 ) + "VND");
+        }
+        else{
+            document.write("Thời gian thoại nhập không đúng, vui lòng thử lại.");
+        }
+    </script>
+</body>
+</html>
